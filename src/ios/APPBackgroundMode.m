@@ -153,7 +153,7 @@ NSString *const kAPPBackgroundEventFailure = @"failure";
     // Play music even in background and dont stop playing music
     // even another app starts playing sound
     [session setCategory:AVAudioSessionCategoryPlayback
-             withOptions:AVAudioSessionCategoryOptionMixWithOthers
+             // withOptions:AVAudioSessionCategoryOptionMixWithOthers
                    error:NULL];
 
     [session setActive:YES error:NULL];
